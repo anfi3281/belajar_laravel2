@@ -13,8 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/helloworld', 'belajarController@index');
+Route::get('/', 'portofolioController@homepage');
+Route::get('/about', 'portofolioController@about');
+Route::get('/contact', 'portofolioController@contact');
+Route::get('/gallery', 'portofolioController@gallery');
+Route::get('/sosmed', 'portofolioController@sosmed');
